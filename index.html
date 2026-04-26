@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamizan Arfa | Pixel Portfolio</title>
+  <meta name="description" content="Hamizan Arfa – High School Student & UI/UX Design Enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕹️</text></svg>" />
+</head>
+<body>
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+<nav class="navbar" role="navigation">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- href="#id" mengarah ke section di halaman yang sama -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══ HOME ════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="hero-tag">PLAYER_ONE CONNECTED</p>
+    <h1 class="hero-name">HAMIZAN ARFA</h1>
+    <div class="pixel-divider"></div>
+    <p class="hero-desc" id="typing-text"
+       data-text="High School Student &amp; UI/UX Design Enthusiast | Crafting intuitive experiences and blending retro aesthetics with modern functionality.">
+      High School Student &amp; UI/UX Design Enthusiast | Crafting intuitive experiences and blending retro aesthetics with modern functionality.
+    </p>
+    <div class="hero-cta">
+      <a href="#portfolio" class="btn btn-primary">&gt; SEE MY WORK</a>
+      <a href="#contact"   class="btn btn-secondary">&gt; CONTACT ME</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-value counter-val" data-target="10">0</span>
+        <span class="stat-label">PROJECTS</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value counter-val" data-target="5">0</span>
+        <span class="stat-label">CERTIFICATES</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value counter-val" data-target="3">0</span>
+        <span class="stat-label">YEARS EXP</span>
+      </div>
+    </div>
+  </div>
+  <span class="scroll-hint">▼ SCROLL DOWN ▼</span>
+</section>
+
+<!-- ══ ABOUT ═══════════════════════════════════════════════ -->
+<section class="section about-section-bg" id="about">
+  <div class="container">
+    <h2 class="section-title">[ ABOUT.EXE ]</h2>
+    <p class="section-subtitle">// LOADING PLAYER DATA...</p>
+
+    <div class="about-grid">
+
+      <!-- Kolom kiri: foto -->
+      <div class="animate-hidden">
+        <div class="profile-card">
+          <div class="profile-card-header">[ PLAYER CARD ]</div>
+          <!--
+            ═══════════════════════════════════════════════
+            GANTI FOTO:
+            Simpan foto kamu sebagai: assets/images/profile.png
+
+            ATUR CROP FOTO (di css/style.css, cari .profile-img):
+            - height: 240px  → ubah angka ini untuk crop lebih/kurang
+                               kecil = lebih banyak terpotong (hanya kepala)
+                               besar = lebih banyak terlihat (ke badan)
+            - object-position: → ubah untuk geser titik fokus foto
+                               "top"     = mulai dari kepala (default)
+                               "50% 15%" = geser sedikit ke bawah
+                               "50% 0%"  = persis dari paling atas
+            ═══════════════════════════════════════════════
+          -->
+          <img src="assets/images/profile.png" alt="Foto Hamizan Arfa" class="profile-img" loading="lazy" />
+          <div class="profile-card-footer">HAMIZAN ARFA &nbsp;■&nbsp; ACTIVE</div>
+        </div>
+
+        <div class="status-box">
+          <div style="color:var(--color-purple);margin-bottom:.5rem;">// STATUS</div>
+          <span style="color:var(--color-green);">●</span> Available for projects<br/>
+          <span style="color:var(--color-yellow);">●</span> Open to collaborations<br/>
+          <span style="color:var(--color-cyan);">●</span> Learning new skills daily
+        </div>
+      </div>
+
+      <!-- Kolom kanan: biodata + skill -->
+      <div>
+        <div class="bio-panel animate-hidden">
+          <div class="bio-panel-header">[ PLAYER INFO ]</div>
+          <div class="bio-panel-body">
+            <div class="bio-item"><span class="bio-label">NAME</span><span>Hamizan Arfa</span></div>
+            <div class="bio-item"><span class="bio-label">STATUS</span><span style="color:var(--color-green)">High School Student</span></div>
+            <div class="bio-item"><span class="bio-label">FOCUS</span><span>UI/UX Design</span></div>
+            <div class="bio-item"><span class="bio-label">TOOLS</span><span>Figma, VS Code</span></div>
+            <div class="bio-item"><span class="bio-label">LANGUAGE</span><span>HTML, CSS, JS</span></div>
+            <div class="bio-item"><span class="bio-label">HOBBIES</span><span>Design, Gaming, Art</span></div>
+            <div class="bio-item"><span class="bio-label">LOCATION</span><span>Indonesia 🇮🇩</span></div>
+          </div>
+        </div>
+
+        <div class="pixel-divider" style="margin:1.5rem 0;"></div>
+
+        <div class="skills-section animate-hidden">
+          <div style="font-size:.65rem;color:var(--color-yellow);margin-bottom:1rem;">[ SKILL TREE ]</div>
+
+          <div class="skill-label-row"><span class="skill-name">UI/UX DESIGN</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-skill="85"></div></div>
+
+          <div class="skill-label-row"><span class="skill-name">HTML &amp; CSS</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-skill="80"></div></div>
+
+          <div class="skill-label-row"><span class="skill-name">JAVASCRIPT</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-skill="65"></div></div>
+
+          <div class="skill-label-row"><span class="skill-name">FIGMA</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-skill="90"></div></div>
+
+          <div class="skill-label-row"><span class="skill-name">GRAPHIC DESIGN</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-skill="75"></div></div>
+        </div>
+
+      </div>
+
+    </div><!-- /about-grid -->
+
+    <!-- ── QUEST LOG (full width, di luar about-grid) ── -->
+    <div style="margin-top:3rem;">
+      <div style="font-size:.65rem;color:var(--color-yellow);margin-bottom:.5rem;">[ QUEST LOG ]</div>
+      <div class="pixel-divider" style="margin:.8rem 0 1.5rem;"></div>
+      <div class="timeline">
+        <div class="timeline-entry animate-hidden">
+          <span class="timeline-dot" style="background:var(--color-cyan);"></span>
+          <div class="timeline-year">2023</div>
+          <div class="timeline-title">Started Learning Web Design</div>
+          <div class="timeline-desc">Began journey with HTML &amp; CSS, building first static websites and exploring the world of web design.</div>
+        </div>
+        <div class="timeline-entry animate-hidden" style="border-color:var(--color-pink);">
+          <span class="timeline-dot" style="background:var(--color-pink);"></span>
+          <div class="timeline-year">2024</div>
+          <div class="timeline-title">Discovered UI/UX Design</div>
+          <div class="timeline-desc">Fell in love with Figma and user-centered design principles. Combining retro aesthetics with modern UX.</div>
+        </div>
+        <div class="timeline-entry animate-hidden" style="border-color:var(--color-yellow);">
+          <span class="timeline-dot" style="background:var(--color-yellow);"></span>
+          <div class="timeline-year">2025</div>
+          <div class="timeline-title">Building This Portfolio</div>
+          <div class="timeline-desc">Combining all skills into a retro pixel-art personal portfolio and continuing to grow.</div>
+        </div>
+      </div>
+    </div>
+    <!-- /QUEST LOG -->
+
+  </div><!-- /container -->
+</section>
+
+<!-- ══ PORTFOLIO ════════════════════════════════════════════ -->
+<section class="section portfolio-section-bg" id="portfolio">
+  <div class="container">
+    <h2 class="section-title">[ ACHIEVEMENTS ]</h2>
+    <p class="section-subtitle">// Click a card to preview the certificate</p>
+
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+      <button class="filter-btn" data-filter="webdev">WEB DEV</button>
+      <button class="filter-btn" data-filter="design">DESIGN</button>
+      <button class="filter-btn" data-filter="course">COURSES</button>
+      <button class="filter-btn" data-filter="award">AWARDS</button>
+    </div>
+
+    <div class="achievements-grid" id="achievements-grid">
+
+      <!-- KARTU 1 -->
+      <article class="achievement-card" data-category="award" tabindex="0"
+        data-modal-title="Juara 1 JYCC Competition"
+        data-modal-img="assets/certificates/juara1.jpg"
+        data-modal-desc="Issued by: Kominfo | Date: 2025">
+        <div class="card-header award"><span class="card-header-title">AWARD 🏆</span><span class="card-badge">1ST</span></div>
+        <div class="card-body">
+          <img src="assets/certificates/juara1.jpg" alt="Juara 1 JYCC" loading="lazy"/>
+          <div class="card-overlay">🔍 CLICK TO PREVIEW</div>
+        </div>
+        <div class="card-footer-info">
+          <div class="card-title">Juara 1 JYCC Competition</div>
+          <div class="card-meta"><span class="card-issuer">Kominfo</span><span>2025</span></div>
+        </div>
+      </article>
+
+      <!-- KARTU 2 -->
+      <article class="achievement-card" data-category="award" tabindex="0"
+        data-modal-title="Hackaton Jagoan Hosting & Spark Garuda"
+        data-modal-img="assets/certificates/exploration.png"
+        data-modal-desc="Issued by: Jagoan Hosting and Spark Garuda | Date: 2026">
+        <div class="card-header award"><span class="card-header-title">HACKATHON</span><span class="card-badge">AWARD</span></div>
+        <div class="card-body">
+          <img src="assets/certificates/exploration.png" alt="Hackaton Certificate" loading="lazy"/>
+          <div class="card-overlay">🔍 CLICK TO PREVIEW</div>
+        </div>
+        <div class="card-footer-info">
+          <div class="card-title">Hackaton Jagoan Hosting &amp; Spark Garuda</div>
+          <div class="card-meta"><span class="card-issuer">Jagoan Hosting</span><span>2026</span></div>
+        </div>
+      </article>
+
+      <!-- KARTU 3 -->
+      <article class="achievement-card" data-category="ui-ux" tabindex="0"
+        data-modal-title="UI/UX Award - University Widyatama"
+        data-modal-img="assets/certificates/widyatama.png"
+        data-modal-desc="Issued by: University Widyatama | Date: 2026">
+        <div class="card-header ui-ux"><span class="card-header-title">UI/UX AWARD</span><span class="card-badge">CERT</span></div>
+        <div class="card-body">
+          <img src="assets/certificates/widyatama.png" alt="UI/UX Award" loading="lazy"/>
+          <div class="card-overlay">🔍 CLICK TO PREVIEW</div>
+        </div>
+        <div class="card-footer-info">
+          <div class="card-title">UI/UX Award</div>
+          <div class="card-meta"><span class="card-issuer">Univ. Widyatama</span><span>2026</span></div>
+        </div>
+      </article>
+
+      <!-- KARTU 4 (placeholder) -->
+      <article class="achievement-card" data-category="course" tabindex="0"
+        data-modal-title="Figma for Beginners"
+        data-modal-img=""
+        data-modal-desc="Issued by: Udemy | Date: 2024 | Complete Figma course covering components, auto-layout, and prototyping.">
+        <div class="card-header course"><span class="card-header-title">ONLINE COURSE</span><span class="card-badge">COURSE</span></div>
+        <div class="card-body">
+          <div class="card-body-placeholder" style="background:linear-gradient(135deg,#160d26,#1e1040);">📐</div>
+          <div class="card-overlay">🔍 CLICK TO PREVIEW</div>
+        </div>
+        <div class="card-footer-info">
+          <div class="card-title">Figma for Beginners – Complete</div>
+          <div class="card-meta"><span class="card-issuer">Udemy</span><span>2024</span></div>
+        </div>
+      </article>
+
+      <!-- KARTU 5 (placeholder) -->
+      <article class="achievement-card" data-category="design" tabindex="0"
+        data-modal-title="Graphic Design Essentials"
+        data-modal-img=""
+        data-modal-desc="Issued by: Creative School | Date: 2023 | Visual design principles including typography and color theory.">
+        <div class="card-header design"><span class="card-header-title">GRAPHIC DESIGN</span><span class="card-badge">CERT</span></div>
+        <div class="card-body">
+          <div class="card-body-placeholder" style="background:linear-gradient(135deg,#1a1500,#2e2500);">🎨</div>
+          <div class="card-overlay">🔍 CLICK TO PREVIEW</div>
+        </div>
+        <div class="card-footer-info">
+          <div class="card-title">Graphic Design Essentials</div>
+          <div class="card-meta"><span class="card-issuer">Creative School</span><span>2023</span></div>
+        </div>
+      </article>
+
+      <!-- KARTU 6 (placeholder) -->
+      <article class="achievement-card" data-category="webdev" tabindex="0"
+        data-modal-title="Web Development Basics"
+        data-modal-img=""
+        data-modal-desc="Issued by: Online Platform | Date: 2024 | HTML5, CSS3, and JavaScript fundamentals.">
+        <div class="card-header webdev"><span class="card-header-title">WEB DEVELOPMENT</span><span class="card-badge">CERT</span></div>
+        <div class="card-body">
+          <div class="card-body-placeholder" style="background:linear-gradient(135deg,#0d2137,#1a3a5c);">💻</div>
+          <div class="card-overlay">🔍 CLICK TO PREVIEW</div>
+        </div>
+        <div class="card-footer-info">
+          <div class="card-title">Web Development Basics</div>
+          <div class="card-meta"><span class="card-issuer">Online Platform</span><span>2024</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══════════════════════════════════════════════ -->
+<section class="section contact-section-bg" id="contact">
+  <div class="container">
+    <h2 class="section-title">[ CONTACT.EXE ]</h2>
+    <p class="section-subtitle">// SEND A MESSAGE OR FIND ME ON SOCIALS</p>
+
+    <div class="contact-grid">
+
+      <!-- Panel sosmed (logo SVG asli) -->
+      <div class="contact-info-panel animate-hidden">
+        <div class="panel-header green">[ FIND ME ON ]</div>
+        <div class="panel-body">
+
+          <!-- GitHub -->
+          <a href="https://github.com/Nekopaa" target="_blank" rel="noopener" class="social-link" id="link-github">
+            <span class="social-logo">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="color:#f8f8f2;">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.51 11.51 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.216.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </span>
+            <div>
+              <div class="social-text-name" style="color:var(--color-green);">GITHUB</div>
+              <div class="social-text-handle">Nekopaa</div>
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/http.zann/" target="_blank" rel="noopener" class="social-link" id="link-instagram">
+            <span class="social-logo">
+              <!-- Logo Instagram gradient via linearGradient SVG -->
+              <svg viewBox="0 0 24 24" fill="none">
+                <defs>
+                  <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%"   stop-color="#f09433"/>
+                    <stop offset="25%"  stop-color="#e6683c"/>
+                    <stop offset="50%"  stop-color="#dc2743"/>
+                    <stop offset="75%"  stop-color="#cc2366"/>
+                    <stop offset="100%" stop-color="#bc1888"/>
+                  </linearGradient>
+                </defs>
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="url(#ig-grad)"/>
+                <circle cx="12" cy="12" r="4.5" stroke="white" stroke-width="2" fill="none"/>
+                <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+              </svg>
+            </span>
+            <div>
+              <div class="social-text-name" style="color:var(--color-pink);">INSTAGRAM</div>
+              <div class="social-text-handle">@http.zann</div>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/hamizan-arfa-596428352/" target="_blank" rel="noopener" class="social-link" id="link-linkedin">
+            <span class="social-logo">
+              <svg viewBox="0 0 24 24" fill="#0A66C2">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </span>
+            <div>
+              <div class="social-text-name" style="color:var(--color-cyan);">LINKEDIN</div>
+              <div class="social-text-handle">Hamizan Arfa</div>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:izansandjaya@gmail.com" class="social-link" id="link-email">
+            <span class="social-logo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <polyline points="2,4 12,13 22,4"/>
+              </svg>
+            </span>
+            <div>
+              <div class="social-text-name" style="color:var(--color-purple);">EMAIL</div>
+              <!-- GANTI: ubah email di href mailto: dan teks di bawah -->
+              <div class="social-text-handle">izansandjaya@gmail.com</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Panel Form -->
+      <div class="contact-form-panel animate-hidden">
+        <div class="panel-header cyan">[ SEND MESSAGE ]</div>
+        <div class="panel-body">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="input-name">YOUR NAME</label>
+              <input type="text" id="input-name" name="name" class="form-input" placeholder="Enter your name..." required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-email">YOUR EMAIL</label>
+              <input type="email" id="input-email" name="email" class="form-input" placeholder="Enter your email..." required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-message">MESSAGE</label>
+              <textarea id="input-message" name="message" class="form-textarea" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-submit" style="width:100%;justify-content:center;display:flex;">
+              &gt; SEND MESSAGE
+            </button>
+            <div class="form-success" id="form-success">✅ MESSAGE SENT! I'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+<footer class="footer">
+  <p class="footer-text">
+    &copy; 2025 <span>HAMIZAN ARFA</span> &nbsp;|&nbsp;
+    Made with <span>♥</span> &amp; Pixel Art &nbsp;|&nbsp;
+    <span>Press Start 2P</span> Font
+  </p>
+</footer>
+
+<!-- Modal Lightbox -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <div class="modal-header-bar">
+      <span id="modal-title-text">CERTIFICATE PREVIEW</span>
+      <button class="modal-close-btn" id="modal-close">[X]</button>
+    </div>
+    <div class="modal-body-content">
+      <img src="" alt="Preview" class="modal-preview-img" id="modal-img" />
+      <div class="modal-cert-title" id="modal-cert-title"></div>
+      <div class="modal-cert-desc"  id="modal-cert-desc"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Anime.js for Gamified Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
